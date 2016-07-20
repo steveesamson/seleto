@@ -1,0 +1,22 @@
+{
+  "name": "seleto",
+  "version": "1.0.0",
+  "description": "HTML DOM selector and manipulator.",
+  "main": "dist/dolla.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha --ui tdd --recursive ./tests/*.js"
+  },
+  "keywords": [
+    "$",
+    "seleto",
+    "DOM Querying jsLib",
+    "DOM Selector"
+  ],
+  "author": "Steve Samson <stevee.samson@gmail.com>",
+  "license": "IMT",
+  "devDependencies": {
+    "atomus": "^2.0.0",
+    "chai": "^3.5.0",
+    "mocha": "^2.5.3"
+  }
+}
