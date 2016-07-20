@@ -76,7 +76,7 @@ var anotherOne = $('form.testform input:text, form.testform input:checkbox, form
 - **`filter`**  
 - **`each`** 
 - **`not`** 
-- **`is`
+- **`is`**
 - **`append`** 
 - **`prepend`** 
 - **`appendTo`**
@@ -103,19 +103,19 @@ var anotherOne = $('form.testform input:text, form.testform input:checkbox, form
 
 The following are interfaces peculiar to `seleto`
 
--**`el:`** It returns the raw HTML Element at the passed index or null otherwise. This is not zero-based. So, to get the first element in a list `liList` of `li` we can use `liList.el(1)` where `liList` is a `seleto` instance. The equivalent in `jQuery` is `liList.get(0)` since it is zero-based in `jQuery`.
+- **`el:`** It returns the raw HTML Element at the passed index or null otherwise. This is not zero-based. So, to get the first element in a list `liList` of `li` we can use `liList.el(1)` where `liList` is a `seleto` instance. The equivalent in `jQuery` is `liList.get(0)` since it is zero-based in `jQuery`.
 
--**`nth:`** *nth* returns the matched element at the nth position in a collection of matches as an instance of `seleto`. This is also non-zero based so using the ealier example, `liList.nth(1)` returns the first matched element as `seleto` instance.
+- **`nth:`** *nth* returns the matched element at the nth position in a collection of matches as an instance of `seleto`. This is also non-zero based so using the ealier example, `liList.nth(1)` returns the first matched element as `seleto` instance.
 
--**`prop:`** *prop* allows the setting/getting of element properties such as the `checked` properties of `checkbox and radio` or the `selected` property of the `select` element.
+- **`prop:`** *prop* allows the setting/getting of element properties such as the `checked` properties of `checkbox and radio` or the `selected` property of the `select` element.
 
--**`even:`** *even* returns the matches of elements whose position in the matched collection is even as `seleto` instance. 
+- **`even:`** *even* returns the matches of elements whose position in the matched collection is even as `seleto` instance. 
 
--**`odd:`** *odd* returns the matches of elements whose position in the matched collection is odd as `seleto` instance. 
+- **`odd:`** *odd* returns the matches of elements whose position in the matched collection is odd as `seleto` instance. 
 
--**`first:`** *first* returns the element on the head of  the matched collection as `seleto` instance. 
+- **`first:`** *first* returns the element on the head of  the matched collection as `seleto` instance. 
 
--**`last:`** *first* returns the element at the bottom of  the matched collection as `seleto` instance. 
+- **`last:`** *first* returns the element at the bottom of  the matched collection as `seleto` instance. 
 
 ### Events in `seleto`
 All like in `jQuery`
