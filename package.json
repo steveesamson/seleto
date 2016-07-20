@@ -2,7 +2,7 @@
   "name": "seleto",
   "version": "1.0.0",
   "description": "HTML DOM selector and manipulator.",
-  "main": "dist/dolla.js",
+  "main": "dist/seleto.js",
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha --ui tdd --recursive ./tests/*.js"
   },

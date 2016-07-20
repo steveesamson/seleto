@@ -1,6 +1,6 @@
 // custom selector implementation
 // nickname: seleto
-;(function (undefined) {
+;(function (global) {
     'use strict';
 
     if (!Array.prototype.indexOf) {
@@ -562,7 +562,8 @@
                     var self = this;
                     return function (event) {
                         var returnValue = true;
-                        event = event || fixEvent(window.event);
+                        //event = event || fixEvent(window.event);
+                        event = event || fixEvent(global.event);
                         var handlers = this.events[event.type];
                         for (var i in handlers) {
                             this.$$handleEvent = handlers[i];
@@ -1226,7 +1227,7 @@
         }
         return this;
     };
-    window.seleto = seleto;
-    window.$ = seleto;
+    global.seleto = seleto;
+    global.$ = seleto;
 
-}());
+}(window || global));
