@@ -1,4 +1,11 @@
 # Seleto
+*`Seleto`* is a lightning-fast, lightweight DOM selector; and it is highly extensible.
+
+##Why Seleto?
+One may be tempted to ask 'why seleto?' when we have the likes of `jQuery, Qwery and zepto`. The answer is as simple as `seleto` itself; I wanted a DOM selector that has the selection capabilities of the mentioned libraries but does not come with all the pletora of unwanted utilities that fused into them that we must ship with our works whether they are wanted or not.  Ok, with that out of the way, let us see what `seleto` can do.
+
+Well, if you have ever used(is there anyone who hasn't?)  `jQuery`, using `seleto` will come natural. While `seleto` works like `jQuery`, do not expect everything that works on `jQuery` to work in `seleto`. I mean, while would anyone wants to make another `jQuery`?
+
 #### Installation
 ```cli
   npm install seleto
@@ -8,12 +15,6 @@
 ```cli
     npm test
 ```
-
-*`Seleto`* is a lightning-fast, lightweight DOM selector; and it is highly extensible.
-##Why Seleto?
-One may be tempted to ask 'why seleto?' when we have the likes of `jQuery, Qwery and zepto`. The answer is as simple as `seleto` itself; I wanted a DOM selector that has the selection capabilities of the mentioned libraries but does not come with all the pletora of unwanted utilities that fused into them that we must ship with our works whether they are wanted or not.  Ok, with that out of the way, let us see what `seleto` can do.
-
-Well, if you have ever used(is there anyone who hasn't?)  `jQuery`, using `seleto` will come natural. While `seleto` works like `jQuery`, do not expect everything that works on `jQuery` to work in `seleto`. I mean, while would anyone wants to make another `jQuery`?
 
 ### List of `seleto`'s supported selectors 
 The following are the selectors/operations supported by `seleto`:
