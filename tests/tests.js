@@ -9,14 +9,12 @@ var chai = require('chai'),
 
         return function (e) {
             e.preventDefault();
-            //console.log(this);
-            //console.log('assigning: %s', text );
             output.text(text);
         };
     };
 
 
-describe('#Dolla DOM Selector', function () {
+describe('#Seleto DOM Selector', function () {
     before(function (done) {
         browser = atomus()
             .external(__dirname + '/../dist/seleto.js')
@@ -694,7 +692,7 @@ describe('#Dolla DOM Selector', function () {
             expect(cloned).not.to.be.equal(null);
         });
 
-        it("Expects cloned instanceof dolla to be equal true.", function () {
+        it("Expects cloned instanceof seleto to be equal true.", function () {
             expect(cloned instanceof seleto).to.be.equal(true);
         });
     });

@@ -1,6 +1,17 @@
-// custom selector implementation
-// nickname: seleto
-;(function (undefined) {
+/**
+ * Seleto is a lightning fast DOM selector
+ * @author steve samson <stevee.samson@gmail.com>
+ */
+
+(function (root, factory) {
+    if (typeof define === 'function' && define.amd) {
+        define([], factory);
+    } else if (typeof module === 'object' && module.exports) {
+        module.exports = factory();
+    } else {
+        root.seleto = root.$ =factory();
+    }
+}(this, function () {
     'use strict';
 
     if (!Array.prototype.indexOf) {
@@ -1226,7 +1237,9 @@
         }
         return this;
     };
-    window.seleto = seleto;
-    window.$ = seleto;
 
-}());
+    return seleto;
+
+}));
+
+
